@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="gemStore">
+	<head>
+		<meta charset="utf-8"/>
+
+		<title>AngularJS Store App</title>
+
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel='stylesheet' typeh="text/css" ref='style.css'/>		
+		<script type="text/javascript" src="angular.js"></script>
+	
+	</head>
+	<body class="container" ng-controller="StoreController as store">
+		<!-- products container -->
+		<div class="list-group">
+			<!-- product container -->
+			<div class="list-group-item row" ng-repeat='product in store.products'>
+	  			<product-title></product-title>
+			</div>
+
+			<!-- image gallery -->
+			<product-gallery></product-gallery>
+			
+			<!-- Product Tabs  -->
+        	<product-tabs></product-tabs>
+		</div>
+
+
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="product.js"></script>
+	</body>
+</html> 
